@@ -3680,3 +3680,118 @@ Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperEr
 2018-04-28 23:26:05 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
 2018-04-28 23:26:05 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 5 ms
 2018-04-28 23:26:05 INFO  LockingApp - Now closing the zookeeper connection....
+2018-04-29 00:40:21 INFO  LockingApp - profile=dev
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:40:24 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:35 INFO  LockingApp - profile=dev
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:49:37 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 168 ms
+2018-04-29 00:49:37 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-9 is: 1000
+2018-04-29 00:49:38 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1009
+2018-04-29 00:49:38 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 23 ms
+2018-04-29 00:49:38 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 1204 ms
+2018-04-29 00:49:38 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-6 is: 1000
+2018-04-29 00:49:39 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1006
+2018-04-29 00:49:39 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 6 ms
+2018-04-29 00:49:39 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 2213 ms
+2018-04-29 00:49:39 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-7 is: 1000
+2018-04-29 00:49:40 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-29 00:49:40 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-29 00:49:40 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 3228 ms
+2018-04-29 00:49:40 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-2 is: 1000
+2018-04-29 00:49:41 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-29 00:49:41 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-29 00:49:41 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 4237 ms
+2018-04-29 00:49:41 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-10 is: 1000
+2018-04-29 00:49:42 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1006
+2018-04-29 00:49:42 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-29 00:49:42 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 5247 ms
+2018-04-29 00:49:42 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-4 is: 1000
+2018-04-29 00:49:43 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1006
+2018-04-29 00:49:43 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 6 ms
+2018-04-29 00:49:43 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 6260 ms
+2018-04-29 00:49:43 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-1 is: 1000
+2018-04-29 00:49:44 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-29 00:49:44 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 2 ms
+2018-04-29 00:49:44 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 7266 ms
+2018-04-29 00:49:44 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-5 is: 1000
+2018-04-29 00:49:45 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1004
+2018-04-29 00:49:45 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 8 ms
+2018-04-29 00:49:45 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 8284 ms
+2018-04-29 00:49:45 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-3 is: 1000
+2018-04-29 00:49:46 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1006
+2018-04-29 00:49:46 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 2 ms
+2018-04-29 00:49:46 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 9292 ms
+2018-04-29 00:49:46 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-8 is: 1000
+2018-04-29 00:49:47 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1002
+2018-04-29 00:49:47 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-29 00:49:47 INFO  LockingApp - Now closing the zookeeper connection....
+2018-04-29 00:53:05 INFO  LockingApp - profile=dev
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-29 00:53:07 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 107 ms
+2018-04-29 00:53:07 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-7 is: 10000
+2018-04-29 00:53:17 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10019
+2018-04-29 00:53:17 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 13 ms
+2018-04-29 00:53:17 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 10133 ms
+2018-04-29 00:53:17 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-1 is: 10000
+2018-04-29 00:53:27 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10003
+2018-04-29 00:53:27 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 7 ms
+2018-04-29 00:53:27 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 20149 ms
+2018-04-29 00:53:27 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-4 is: 10000
+2018-04-29 00:53:37 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10006
+2018-04-29 00:53:37 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 7 ms
+2018-04-29 00:53:37 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 30177 ms
+2018-04-29 00:53:37 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-3 is: 10000
+2018-04-29 00:53:47 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10006
+2018-04-29 00:53:47 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 6 ms
+2018-04-29 00:53:47 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 40193 ms
+2018-04-29 00:53:47 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-2 is: 10000
+2018-04-29 00:53:57 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10006
+2018-04-29 00:53:57 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 91 ms
+2018-04-29 00:53:57 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 50287 ms
+2018-04-29 00:53:57 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-6 is: 10000
+2018-04-29 00:54:07 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10009
+2018-04-29 00:54:07 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 8 ms
+2018-04-29 00:54:07 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 60310 ms
+2018-04-29 00:54:07 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-8 is: 10000
+2018-04-29 00:54:17 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10007
+2018-04-29 00:54:17 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 8 ms
+2018-04-29 00:54:17 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 70326 ms
+2018-04-29 00:54:17 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-5 is: 10000
+2018-04-29 00:54:27 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10006
+2018-04-29 00:54:27 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 6 ms
+2018-04-29 00:54:27 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 80341 ms
+2018-04-29 00:54:27 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-9 is: 10000
+2018-04-29 00:54:37 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10006
+2018-04-29 00:54:37 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-29 00:54:37 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 90350 ms
+2018-04-29 00:54:37 INFO  LockingApp - App1 Sleep time for Thread pool-3-thread-10 is: 10000
+2018-04-29 00:54:47 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 10008
+2018-04-29 00:54:47 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 5 ms
+2018-04-29 00:54:47 INFO  LockingApp - Now closing the zookeeper connection....

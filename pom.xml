@@ -8,7 +8,7 @@
     <artifactId>zookeeper-distributed-lock</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <curator.version>2.12.0</curator.version>
+        <curator.version>4.0.1</curator.version>
         <spring.version>5.0.5.RELEASE</spring.version>
     </properties>
 
