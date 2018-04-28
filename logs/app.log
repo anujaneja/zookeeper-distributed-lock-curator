@@ -2394,3 +2394,416 @@ Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperEr
 2018-04-27 11:58:49 INFO  LockingApp - Sleep time for Thread pool-3-thread-5 is: 1000
 2018-04-27 11:58:50 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
 2018-04-27 11:58:50 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-27 18:31:24 INFO  LockingApp - profile=dev
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:27 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_d21beb6b-15a4-4be1-8cfb-354576e5d38e-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_d21beb6b-15a4-4be1-8cfb-354576e5d38e-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090125
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_4330f4f3-28c2-48ce-9ff8-931e6b3db7ab-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_4330f4f3-28c2-48ce-9ff8-931e6b3db7ab-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090127
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_cf67d55f-3311-4dd9-a072-b78b3367ec90-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_cf67d55f-3311-4dd9-a072-b78b3367ec90-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090251
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_ce73b1ca-ff10-47b1-a7f4-2517d3f1b495-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_ce73b1ca-ff10-47b1-a7f4-2517d3f1b495-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090253
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_267ce9fd-0eae-498d-8b42-b21b6487895c-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_267ce9fd-0eae-498d-8b42-b21b6487895c-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090402
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_e9432b41-5ae5-42cc-b9ae-f22466788da6-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_e9432b41-5ae5-42cc-b9ae-f22466788da6-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090404
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_d09ffa57-bfcf-42f5-8752-e1f5a7a765a2-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_d09ffa57-bfcf-42f5-8752-e1f5a7a765a2-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090571
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_c2df9ece-90dc-49ad-b1e3-beaa91c9586d-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_c2df9ece-90dc-49ad-b1e3-beaa91c9586d-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090574
+2018-04-27 18:31:30 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:30 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_5d14e6b1-eee0-4cee-bb42-c1e9869db630-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_5d14e6b1-eee0-4cee-bb42-c1e9869db630-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:30 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834090729
+2018-04-27 18:31:31 ERROR DistributedLock - Exception in taking lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section 
+2018-04-27 18:31:31 ERROR LockingApp - Exception in taking a lock
+java.lang.RuntimeException: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_57c1872e-0b25-4e8f-8a55-279d63559526-lock-
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:47)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:53)
+	at com.anujaneja.zookeeper.distributed.lock.app.LockingApp$1.call(LockingApp.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.zookeeper.KeeperException$UnimplementedException: KeeperErrorCode = Unimplemented for /distributedLocks/FILE_WRITER_LOCK/global/file-lock1/_c_57c1872e-0b25-4e8f-8a55-279d63559526-lock-
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:103)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1525)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1181)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at org.apache.curator.framework.recipes.locks.StandardLockInternalsDriver.createsTheLock(StandardLockInternalsDriver.java:54)
+	at org.apache.curator.framework.recipes.locks.LockInternals.attemptLock(LockInternals.java:225)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.internalLock(InterProcessMutex.java:237)
+	at org.apache.curator.framework.recipes.locks.InterProcessMutex.acquire(InterProcessMutex.java:89)
+	at com.anujaneja.zookeeper.distributed.lock.locking.DistributedLock.lock(DistributedLock.java:42)
+	... 6 more
+2018-04-27 18:31:31 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1524834091699
+2018-04-28 22:58:06 INFO  LockingApp - profile=dev
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 22:58:09 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 128 ms
+2018-04-28 22:58:09 INFO  LockingApp - Sleep time for Thread pool-3-thread-10 is: 1000
+2018-04-28 22:58:10 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1010
+2018-04-28 22:58:10 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 18 ms
+2018-04-28 22:58:10 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 1156 ms
+2018-04-28 22:58:10 INFO  LockingApp - Sleep time for Thread pool-3-thread-9 is: 1000
+2018-04-28 22:58:11 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-28 22:58:11 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 22:58:11 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 2168 ms
+2018-04-28 22:58:11 INFO  LockingApp - Sleep time for Thread pool-3-thread-1 is: 1000
+2018-04-28 22:58:12 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-28 22:58:12 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 2 ms
+2018-04-28 22:58:12 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 3175 ms
+2018-04-28 22:58:12 INFO  LockingApp - Sleep time for Thread pool-3-thread-5 is: 1000
+2018-04-28 22:58:13 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1006
+2018-04-28 22:58:13 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 2 ms
+2018-04-28 22:58:13 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 4186 ms
+2018-04-28 22:58:13 INFO  LockingApp - Sleep time for Thread pool-3-thread-3 is: 1000
+2018-04-28 22:58:14 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-28 22:58:14 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 22:58:14 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 5197 ms
+2018-04-28 22:58:14 INFO  LockingApp - Sleep time for Thread pool-3-thread-2 is: 1000
+2018-04-28 22:58:15 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1003
+2018-04-28 22:58:15 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 22:58:15 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 6200 ms
+2018-04-28 22:58:15 INFO  LockingApp - Sleep time for Thread pool-3-thread-8 is: 1000
+2018-04-28 22:58:16 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1002
+2018-04-28 22:58:16 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 2 ms
+2018-04-28 22:58:16 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 7203 ms
+2018-04-28 22:58:16 INFO  LockingApp - Sleep time for Thread pool-3-thread-7 is: 1000
+2018-04-28 22:58:17 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1007
+2018-04-28 22:58:17 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 4 ms
+2018-04-28 22:58:17 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 8220 ms
+2018-04-28 22:58:17 INFO  LockingApp - Sleep time for Thread pool-3-thread-4 is: 1000
+2018-04-28 22:58:18 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1004
+2018-04-28 22:58:18 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 22:58:18 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 9227 ms
+2018-04-28 22:58:18 INFO  LockingApp - Sleep time for Thread pool-3-thread-6 is: 1000
+2018-04-28 22:58:19 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1004
+2018-04-28 22:58:19 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 2 ms
+2018-04-28 23:00:52 INFO  LockingApp - profile=dev
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Going to take lock on path /distributedLocks/FILE_WRITER_LOCK/global/file-lock1 and section 
+2018-04-28 23:00:53 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 46 ms
+2018-04-28 23:00:53 INFO  LockingApp - Sleep time for Thread pool-3-thread-5 is: 1000
+2018-04-28 23:00:54 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1010
+2018-04-28 23:00:54 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 9 ms
+2018-04-28 23:00:54 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 1067 ms
+2018-04-28 23:00:54 INFO  LockingApp - Sleep time for Thread pool-3-thread-8 is: 1000
+2018-04-28 23:00:55 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1007
+2018-04-28 23:00:55 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 5 ms
+2018-04-28 23:00:55 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 2083 ms
+2018-04-28 23:00:55 INFO  LockingApp - Sleep time for Thread pool-3-thread-1 is: 1000
+2018-04-28 23:00:56 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-28 23:00:56 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 23:00:56 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 3092 ms
+2018-04-28 23:00:56 INFO  LockingApp - Sleep time for Thread pool-3-thread-4 is: 1000
+2018-04-28 23:00:57 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1006
+2018-04-28 23:00:57 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 23:00:57 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 4100 ms
+2018-04-28 23:00:57 INFO  LockingApp - Sleep time for Thread pool-3-thread-3 is: 1000
+2018-04-28 23:00:58 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-28 23:00:58 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 5 ms
+2018-04-28 23:00:58 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 5111 ms
+2018-04-28 23:00:58 INFO  LockingApp - Sleep time for Thread pool-3-thread-2 is: 1000
+2018-04-28 23:00:59 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1004
+2018-04-28 23:00:59 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 23:00:59 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 6124 ms
+2018-04-28 23:00:59 INFO  LockingApp - Sleep time for Thread pool-3-thread-6 is: 1000
+2018-04-28 23:01:00 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1004
+2018-04-28 23:01:00 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 23:01:00 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 7131 ms
+2018-04-28 23:01:00 INFO  LockingApp - Sleep time for Thread pool-3-thread-10 is: 1000
+2018-04-28 23:01:01 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1006
+2018-04-28 23:01:01 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 6 ms
+2018-04-28 23:01:01 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 8146 ms
+2018-04-28 23:01:01 INFO  LockingApp - Sleep time for Thread pool-3-thread-9 is: 1000
+2018-04-28 23:01:02 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-28 23:01:02 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 3 ms
+2018-04-28 23:01:02 INFO  DistributedLock - Acquired lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:, in 9156 ms
+2018-04-28 23:01:02 INFO  LockingApp - Sleep time for Thread pool-3-thread-7 is: 1000
+2018-04-28 23:01:03 INFO  DistributedLock - Releasing lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  holdTime: 1005
+2018-04-28 23:01:03 INFO  DistributedLock - Released lock on path: /distributedLocks/FILE_WRITER_LOCK/global/file-lock1, section:  in : 2 ms

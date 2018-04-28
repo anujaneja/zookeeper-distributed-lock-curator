@@ -43,7 +43,7 @@ public class AppConfig {
     @Qualifier("lockingClient")
     public LockingClient lockingClient() {
         System.out.println("zookeeperConnectionString===="+zookeeperConnectionString);
-        return new LockingClient(zookeeperConnectionString);
+        return new LockingClient(zookeeperConnectionString,60000,15000);
     }
 
 
