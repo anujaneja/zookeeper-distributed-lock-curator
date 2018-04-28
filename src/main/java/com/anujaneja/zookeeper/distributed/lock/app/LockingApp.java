@@ -1,5 +1,6 @@
 package com.anujaneja.zookeeper.distributed.lock.app;
 
+import com.anujaneja.zookeeper.distributed.lock.client.LockingClient;
 import com.anujaneja.zookeeper.distributed.lock.resource.FileWriterResource;
 import com.anujaneja.zookeeper.distributed.lock.services.LockingService;
 import org.apache.log4j.Logger;
@@ -28,12 +29,15 @@ public class LockingApp {
             System.setProperty("profile","dev");
         }
 
+        final String appName = System.getProperty("appName","app1");
+
         logger.info("profile="+System.getProperty("profile"));
         ApplicationContext context =
                 new ClassPathXmlApplicationContext(new String[] {"application-context.xml"});
 
 
         final LockingService lockingService = context.getBean("lockingService", LockingService.class);
+        final LockingClient lockingClient = context.getBean("lockingClient",LockingClient.class);
         final FileWriterResource fileWriterResource = context.getBean("fileWriterResource", FileWriterResource.class);
         final Environment environment = context.getBean("environment",Environment.class);
 
@@ -54,19 +58,19 @@ public class LockingApp {
 
                         //Call the file Writer service to write
                         String threadName =  Thread.currentThread().getName();
-                        StringBuilder builder = new StringBuilder(threadName);
+                        StringBuilder builder = new StringBuilder(appName).append(" - ").append(threadName);
                         builder.append(" - ").append(new Date().toString()).append(": Start Writing to File....");
 
                         fileWriterResource.writeToFile(builder.toString());
 
 
                         long sleepTime = Long.parseLong(environment.getProperty("thread.sleepTime"));
-                        logger.info("Sleep time for Thread "+threadName+ " is: "+sleepTime);
+                        logger.info(appName+" Sleep time for Thread "+threadName+ " is: "+sleepTime);
 
                         Thread.sleep(sleepTime);
 
 
-                        builder = new StringBuilder(threadName);
+                        builder = new StringBuilder(appName).append(" - ").append(threadName);
                         builder.append(" - ").append(new Date().toString()).append(": End Writing to File....");
 
                         fileWriterResource.writeToFile(builder.toString());
@@ -90,6 +94,10 @@ public class LockingApp {
 
         executorService.shutdown();
         executorService.awaitTermination(10, TimeUnit.MINUTES);
+        logger.info("Now closing the zookeeper connection....");
+
+        lockingClient.getLockingClient().close();
+
 
     }
 

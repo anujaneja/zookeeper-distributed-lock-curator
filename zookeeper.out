@@ -1,0 +1,40 @@
+2018-04-28 23:25:49,986 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /Users/admin/soft/zookeeper/bin/../conf/zoo.cfg
+2018-04-28 23:25:49,992 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2018-04-28 23:25:49,992 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2018-04-28 23:25:49,992 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2018-04-28 23:25:49,993 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2018-04-28 23:25:50,007 [myid:] - INFO  [main:QuorumPeerConfig@103] - Reading configuration from: /Users/admin/soft/zookeeper/bin/../conf/zoo.cfg
+2018-04-28 23:25:50,007 [myid:] - INFO  [main:ZooKeeperServerMain@95] - Starting server
+2018-04-28 23:25:50,016 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2018-04-28 23:25:50,016 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=192.168.1.3
+2018-04-28 23:25:50,016 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_161
+2018-04-28 23:25:50,016 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2018-04-28 23:25:50,016 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre
+2018-04-28 23:25:50,016 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/admin/soft/zookeeper/bin/../build/classes:/Users/admin/soft/zookeeper/bin/../build/lib/*.jar:/Users/admin/soft/zookeeper/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/admin/soft/zookeeper/bin/../lib/slf4j-api-1.6.1.jar:/Users/admin/soft/zookeeper/bin/../lib/netty-3.7.0.Final.jar:/Users/admin/soft/zookeeper/bin/../lib/log4j-1.2.16.jar:/Users/admin/soft/zookeeper/bin/../lib/jline-0.9.94.jar:/Users/admin/soft/zookeeper/bin/../zookeeper-3.4.6.jar:/Users/admin/soft/zookeeper/bin/../src/java/lib/*.jar:/Users/admin/soft/zookeeper/bin/../conf:
+2018-04-28 23:25:50,017 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/admin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-04-28 23:25:50,017 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/h7/fs_2kgzx4n3gfvkjn9kwgchr0000gn/T/
+2018-04-28 23:25:50,017 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2018-04-28 23:25:50,019 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2018-04-28 23:25:50,019 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2018-04-28 23:25:50,019 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.11.6
+2018-04-28 23:25:50,019 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=admin
+2018-04-28 23:25:50,019 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/admin
+2018-04-28 23:25:50,019 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/admin/codebase/pp/zookeeper-distributed-lock-curator
+2018-04-28 23:25:50,026 [myid:] - INFO  [main:ZooKeeperServer@755] - tickTime set to 2000
+2018-04-28 23:25:50,027 [myid:] - INFO  [main:ZooKeeperServer@764] - minSessionTimeout set to -1
+2018-04-28 23:25:50,027 [myid:] - INFO  [main:ZooKeeperServer@773] - maxSessionTimeout set to -1
+2018-04-28 23:25:50,048 [myid:] - INFO  [main:NIOServerCnxnFactory@94] - binding to port 0.0.0.0/0.0.0.0:2181
+2018-04-28 23:25:50,430 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /0:0:0:0:0:0:0:1:62267
+2018-04-28 23:25:50,439 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@861] - Client attempting to renew session 0x16305c997c1003f at /0:0:0:0:0:0:0:1:62267
+2018-04-28 23:25:50,442 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@617] - Established session 0x16305c997c1003f with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:62267
+2018-04-28 23:25:50,638 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /0:0:0:0:0:0:0:1:62268
+2018-04-28 23:25:50,639 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@861] - Client attempting to renew session 0x16305c997c1003e at /0:0:0:0:0:0:0:1:62268
+2018-04-28 23:25:50,640 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@617] - Established session 0x16305c997c1003e with negotiated timeout 40000 for client /0:0:0:0:0:0:0:1:62268
+2018-04-28 23:25:50,644 [myid:] - INFO  [SyncThread:0:FileTxnLog@199] - Creating new log file: log.8be
+2018-04-28 23:25:51,225 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@197] - Accepted socket connection from /0:0:0:0:0:0:0:1:62273
+2018-04-28 23:25:51,225 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@861] - Client attempting to renew session 0x16305c997c1002d at /0:0:0:0:0:0:0:1:62273
+2018-04-28 23:25:51,226 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@617] - Established session 0x16305c997c1002d with negotiated timeout 30000 for client /0:0:0:0:0:0:0:1:62273
+2018-04-28 23:25:55,712 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@494] - Processed session termination for sessionid: 0x16305c997c1003e
+2018-04-28 23:25:55,719 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /0:0:0:0:0:0:0:1:62268 which had sessionid 0x16305c997c1003e
+2018-04-28 23:26:05,838 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@494] - Processed session termination for sessionid: 0x16305c997c1003f
+2018-04-28 23:26:05,841 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1007] - Closed socket connection for client /0:0:0:0:0:0:0:1:62267 which had sessionid 0x16305c997c1003f
