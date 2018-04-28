@@ -15,6 +15,8 @@ Steps/Commands for testing on zookeeper version 3.5.x and curator version 4.x.x
 
     upgrade the zookeeper to 3.5.x (You might need to delete old snapshots)
 
+    zookeeper-distributed-lock-curator $ git checkout master_zookeeper_3.5.x
+    
     zookeeper-distributed-lock-curator $ rm -f distributedFile.txt
     
     zookeeper-distributed-lock-curator $ mvn clean install
